@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Brandejs,     ID_STISKSEST: 101, Brandejs - doručenka malá modrá [35] -->
+    <!-- Backup:   <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;"><div id="Radek1" style="position: absolute; left: 80mm; top: 20mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">První řádek adresy</div><div id="Radek2" style="position: absolute; left: 80mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy</div><div id="DokumentCisloJednaci" style="position: absolute; left: 125mm; top: 44mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div><div id="Radek1" style="position: absolute; left: 80mm; top: 63mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">První řádek adresy</div><div id="Radek2" style="position: absolute; left: 80mm; top: 70mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy</div><div style="position: absolute; left: 80mm; top: 8mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div><div style="position: absolute; left: 74mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"></div><div style="position: absolute; left: 119mm; top: 46mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div><div style="position: absolute; left: 119mm; top: 51mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"></div><div style="position: absolute; left: 80mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69  Králíky</div><div style="position: absolute; left: 80mm; top: 5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div><div style="position: absolute; left: 73mm; top: 49mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69  Králíky</div><div style="position: absolute; left: 73mm; top: 44mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div><div style="position: absolute; left: 119mm; top: 43mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div><div style="position: absolute; left: 119mm; top: 49mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div><div id="DokumentEvidencniCisloRok" style="position: absolute; left: 125mm; top: 49mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345/2013</div><div id="Radek4" style="position: absolute; left: 80mm; top: 34mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div><div id="Radek4" style="position: absolute; left: 80mm; top: 79mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div><div id="Radek3" style="position: absolute; left: 80mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Třetí řádek adresy</div><div id="Radek3" style="position: absolute; left: 80mm; top: 75mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Třetí řádek adresy</div></div>-->
+
+    <!-- <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+    <div style="position: absolute; left: 95mm; top: 5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+    <div style="position: absolute; left: 95mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+
+    <div id="Radek1" style="position: absolute; left: 95mm; top: 22mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">První řádek adresy</div>
+    <div id="Radek2" style="position: absolute; left: 95mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+    <div id="Radek3" style="position: absolute; left: 95mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+    <div id="Radek4" style="position: absolute; left: 95mm; top: 34mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+
+    <div style="position: absolute; left: 80mm; top: 48mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+    <div style="position: absolute; left: 80mm; top: 52mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+
+    <div style="position: absolute; left: 119mm; top: 48mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 125mm; top: 48mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+
+    <div style="position: absolute; left: 119mm; top: 52mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div>
+    <div id="DokumentEvidencniCisloRok" style="position: absolute; left: 125mm; top: 52mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345/2013</div>
+
+    <div id="Radek1" style="position: absolute; left: 92mm; top: 66.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">První řádek adresy</div>
+    <div id="Radek2" style="position: absolute; left: 92mm; top: 71.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+    <div id="Radek3" style="position: absolute; left: 92mm; top: 76.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+    <div id="Radek4" style="position: absolute; left: 92mm; top: 81.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+</div> -->
+
+
+
+    <!-- BACKUP ID 124	"G doručenka malá modrá nová [85]" <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;"><div id="Radek1" style="position: absolute; left: 82mm; top: 18mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div><div id="Radek2" style="position: absolute; left: 82mm; top: 22mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div><div id="Radek3" style="position: absolute; left: 82mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div><div id="Radek2" style="position: absolute; left: 83mm; top: 65mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div><div id="Radek3" style="position: absolute; left: 83mm; top: 69mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div><div style="position: absolute; left: 80mm; top: 13mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div><div id="Radek4" style="position: absolute; left: 83mm; top: 75mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div><div style="position: absolute; left: 83mm; top: 9mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div><div style="position: absolute; left: 83mm; top: 1mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div><div id="DokumentCisloJednaci" style="position: absolute; left: 112mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div><div id="DokumentEvidencniCislo" style="position: absolute; left: 112mm; top: 47mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">12345</div><div id="Radek4" style="position: absolute; left: 82mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div><div id="Radek1" style="position: absolute; left: 83mm; top: 60mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div><div style="position: absolute; left: 79mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad</div><div style="position: absolute; left: 79mm; top: 47mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div><div style="position: absolute; left: 82mm; top: 6mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Velké náměstí 5</div><div style="position: absolute; left: 82mm; top: 2mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div><div style="position: absolute; left: 82mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div></div>-->
+    <!-- Slavíková - doručenka malá modrá nová [85]-->
+    <!-- <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+        <div id="Radek1" style="position: absolute; left: 82mm; top: 18mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+        <div id="Radek2" style="position: absolute; left: 82mm; top: 22mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+        <div id="Radek3" style="position: absolute; left: 82mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+        <div id="Radek2" style="position: absolute; left: 83mm; top: 65mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+        <div id="Radek3" style="position: absolute; left: 83mm; top: 69mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+        <div style="position: absolute; left: 80mm; top: 13mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div>
+        <div id="Radek4" style="position: absolute; left: 83mm; top: 75mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+        <div style="position: absolute; left: 83mm; top: 9mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div>
+        <div style="position: absolute; left: 83mm; top: 1mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"></div>
+        <div id="DokumentCisloJednaci" style="position: absolute; left: 112mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+        <div id="DokumentEvidencniCislo" style="position: absolute; left: 112mm; top: 47mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">12345</div>
+        <div id="Radek4" style="position: absolute; left: 82mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+        <div id="Radek1" style="position: absolute; left: 83mm; top: 60mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+        <div style="position: absolute; left: 79mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad</div>
+        <div style="position: absolute; left: 79mm; top: 47mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+        <div style="position: absolute; left: 82mm; top: 6mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Velké náměstí 5</div>
+        <div style="position: absolute; left: 82mm; top: 2mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+        <div style="position: absolute; left: 82mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+    </div> -->
+
+
+    <!-- Backup ID: 125	Obyčejná A5ka [87] 
+        <div id="printEnvelopeTemplate" style="width: 148mm; height: 210mm; position: relative; border-style: groove;"><div style="position: absolute; left: 5mm; top: 140mm; transform-origin: left center; transform: rotate(-90deg); font-size: 16px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Městský úřad Králíky</div><div style="position: absolute; left: 10mm; top: 140mm; transform-origin: left center; transform: rotate(-90deg); font-size: 16px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">561 69  Králíky</div><div style="position: absolute; left: 60mm; top: 65mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div><div id="DokumentCisloJednaci" style="position: absolute; left: 60mm; top: 55mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div><div style="position: absolute; left: 66mm; top: 65mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div><div id="DokumentEvidencniCisloRok" style="position: absolute; left: 66mm; top: 55mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345/2013</div><div id="Radek1" style="position: absolute; left: 72mm; top: 65mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div><div id="Radek2" style="position: absolute; left: 78mm; top: 65mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy</div><div id="Radek4" style="position: absolute; left: 92mm; top: 65mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div><div id="Radek3" style="position: absolute; left: 85mm; top: 65mm; transform-origin: left center; transform: rotate(-90deg); font-size: 18px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Třetí řádek adresy</div></div>
+    -->
+
+    <!-- <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+    <div style="position: absolute; left: 35mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+    <div style="position: absolute; left: 35mm; top: 13.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Velké náměstí 5</div>
+    <div style="position: absolute; left: 35mm; top: 17mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+
+    <div                           style="position: absolute; left: 104mm; top: 68mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 110mm; top: 68mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+    
+    <div                             style="position: absolute; left: 104mm; top: 72mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div>
+    <div id="DokumentEvidencniCislo" style="position: absolute; left: 110mm; top: 72mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345</div>
+    
+    <div id="Radek1" style="position: absolute; left: 104mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+    <div id="Radek2" style="position: absolute; left: 104mm; top: 84mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+    <div id="Radek3" style="position: absolute; left: 104mm; top: 88mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+    <div id="Radek4" style="position: absolute; left: 104mm; top: 92mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+</div> -->
+
+
+    <!--ID 105:  doručenka velká modrá [46] -->
+    <!-- <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+    <div style="position: absolute; left: 104mm; top: 4mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+    <div style="position: absolute; left: 104mm; top: 8mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+
+
+    <div id="Radek1" style="position: absolute; left: 104mm; top: 024mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy (nahoře)</div>
+    <div id="Radek2" style="position: absolute; left: 104mm; top: 029mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy (nahoře)</div>
+    <div id="Radek3" style="position: absolute; left: 104mm; top: 034mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy (nahoře)</div>
+    <div id="Radek4" style="position: absolute; left: 104mm; top: 039mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (nahoře)</div>
+    <div id="Radek5" style="position: absolute; left: 104mm; top: 044mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Pátý řádek adresy (nahoře)</div>
+
+    <div style="position: absolute; left: 92mm; top: 55mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+    <div style="position: absolute; left: 92mm; top: 59mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+
+    <div style="position: absolute; left: 92mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 99mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">MUKR/18999/2028/OVV/BJ</div>
+
+    <div id="Radek1" style="position: absolute; left: 085mm; top: 098mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy (dole)</div>
+    <div id="Radek2" style="position: absolute; left: 085mm; top: 103mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy (dole)</div>
+    <div id="Radek3" style="position: absolute; left: 085mm; top: 108mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy (dole)</div>
+    <div id="Radek4" style="position: absolute; left: 085mm; top: 113mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (dole)</div>
+    <div id="Radek5" style="position: absolute; left: 085mm; top: 118mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Pátý řádek adresy (dole)</div>
+</div> -->
+
+
+    <!-- ID 106:    doručenka velká modrá město [48] -->
+    <!-- <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+    
+    <div style="position: absolute; left: 104mm; top: 7mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Přestupková komise</div>
+    <div style="position: absolute; left: 104mm; top: 11.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">města Králíky</div>
+    <div style="position: absolute; left: 104mm; top: 16mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+
+    <div id="Radek1" style="position: absolute; left: 104mm; top: 28mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+    <div id="Radek2" style="position: absolute; left: 104mm; top: 32mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+    <div id="Radek3" style="position: absolute; left: 104mm; top: 36mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+    <div id="Radek4" style="position: absolute; left: 104mm; top: 40mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+    
+    <div style="position: absolute; left: 104mm; top: 53mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Přestupková komise</div>
+    <div style="position: absolute; left: 104mm; top: 57mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">města Králíky</div>
+    <div style="position: absolute; left: 104mm; top: 61mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+    
+    <div style="position: absolute; left: 92mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 99mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">MUKR/18999/2028/OVV/BJ</div>
+    
+    <div id="Radek1" style="position: absolute; left: 85mm; top: 98mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+    <div id="Radek2" style="position: absolute; left: 85mm; top: 103mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+    <div id="Radek3" style="position: absolute; left: 85mm; top: 107mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+    <div id="Radek4" style="position: absolute; left: 85mm; top: 113mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+</div> -->
+
+
+    <!-- <h2>Malá modrá Městský úřad</h2> -->
+    <!-- Malá modrá Městský úřad -->
+    <!-- <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+    
+    <div style="position: absolute; left: 80mm; top: 2mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad </div>        
+    <div style="position: absolute; left: 80mm; top: 5.7mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 18mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy  (nahoře)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 22mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy  (nahoře)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy  (nahoře)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (nahoře)</div>
+
+    
+    <div style="position: absolute; left: 80mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad</div>
+    <div style="position: absolute; left: 80mm; top: 45.7mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+    
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 105mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">MUKR/18999/2028/OVV/BJ</div>
+    
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 63mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy  (dole)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 67mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy  (dole)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 71mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy  (dole)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 75mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (dole)</div>
+
+</div> -->
+
+
+    <!-- Malá modrá Přestupková komise -->
+    <!-- 
+    <h2>Malá modrá Přestupková komise</h2>
+
+<div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+
+    <div style="position: absolute; left: 80mm; top: 2mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Přestupková komise města Králíky</div>
+    <div style="position: absolute; left: 80mm; top: 6mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 18mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy (nahoře)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 22mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy (nahoře)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy (nahoře)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (nahoře)</div>
+
+
+    <div style="position: absolute; left: 80mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Přestupková komise</div>
+    <div style="position: absolute; left: 80mm; top: 46mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">města Králíky</div>
+    <div style="position: absolute; left: 80mm; top: 50mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 115mm; top: 46mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">MUKR/18999/2028/OVV/BJ</div>
+
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 63mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy (dole)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 67mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy (dole)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 71mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy (dole)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 75mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (dole)</div>
+
+</div>
+
+<h2>Od Světlušky</h2>
+
+<div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+    <div style="position: absolute; left: 80mm; top: 2mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad </div>        
+    <div style="position: absolute; left: 80mm; top: 5.7mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 18mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy  (nahoře)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 22mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy  (nahoře)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy  (nahoře)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (nahoře)</div>
+
+    <div style="position: absolute; left: 80mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad</div>
+    <div style="position: absolute; left: 80mm; top: 45.7mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+    
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 105mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">MUKR/18999/2028/OVV/BJ</div>
+   
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 60mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy  (dole)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 64.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy  (dole)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 69mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy  (dole)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 74mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (dole)</div>
+   
+</div> -->
+
+
+    <!-- ====================================================== -->
+    <!-- <h2>[3] Modrá malá Městský úřad ID_STISKSEST:91</h2> -->
+
+    <!-- <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+    <div style="position: absolute; left: 80mm; top: 2mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad </div>        
+    <div style="position: absolute; left: 80mm; top: 5.7mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 18mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy  (nahoře)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 22mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy  (nahoře)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 26mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy  (nahoře)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (nahoře)</div>
+
+    <div style="position: absolute; left: 80mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad</div>
+    <div style="position: absolute; left: 80mm; top: 45.7mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+    
+    <div id="DokumentCisloJednaci" style="position: absolute; left: 105mm; top: 42mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">MUKR/18999/2028/OVV/BJ</div>
+   
+
+    <div id="Radek1" style="position: absolute; left: 90mm; top: 64mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy  (dole)</div>
+    <div id="Radek2" style="position: absolute; left: 90mm; top: 68.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy  (dole)</div>
+    <div id="Radek3" style="position: absolute; left: 90mm; top: 73mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy  (dole)</div>
+    <div id="Radek4" style="position: absolute; left: 90mm; top: 77.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px;  font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (dole)</div>
+   
+</div> -->
+
+
+    <!-- BACKUP Zahraničí [50]  
+        ========================
+        ID_STISKSEST	ID_CZAKAZNIK	ID_STISKSEST_VZOR	NAZEV	POPIS	ID_CLOKSTANICE	ID_RFORMATYSTR	ZDROJ_DAT	ROZMERY_X	ROZMERY_Y	SESTAVA	ID_RSTAVZAZNAM
+    107	1	49	Zahraničí [50]	j	1	100	1	148	210	"<div id=""printEnvelopeTemplate"" style=""width: 148mm; height: 210mm; position: relative; border-style: groove;""><div style=""position: absolute; left: 165mm; top: 15mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">Městský úřad Králíky</div><div id=""Radek1"" style=""position: absolute; left: 68mm; top: 126mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">První řádek adresy</div><div id=""Radek2"" style=""position: absolute; left: 62mm; top: 126mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">Druhý řádek adresy</div><div id=""Radek3"" style=""position: absolute; left: 56mm; top: 126mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">Třetí řádek adresy</div><div style=""position: absolute; left: 156mm; top: 15mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">561 69  Králíky</div><div style=""position: absolute; left: 147mm; top: 15mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">CZECHIA</div><div style=""position: absolute; left: 80mm; top: 126mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">ČJ:</div><div id=""DokumentCisloJednaci"" style=""position: absolute; left: 80mm; top: 133mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;"">1/2011</div></div>"	10
+-->
+
+    <!-- <h2> Blanka Zahraničí [50]</h2>
+    <div id="printEnvelopeTemplate" style="width: 180mm; height: 208mm; position: relative; border-style: groove;">
+
+        <div style="position: absolute; left: 145mm; top: -20mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+        <div style="position: absolute; left: 140mm; top: -20mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+        <div style="position: absolute; left: 135mm; top: -20mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">CZECHIA</div>
+
+        <div                           style="position: absolute; left: 60mm; top: 96mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+        <div id="DokumentCisloJednaci" style="position: absolute; left: 60mm; top: 103mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+
+        <div id="Radek1" style="position: absolute; left: 48mm; top: 96mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+        <div id="Radek2" style="position: absolute; left: 42mm; top: 96mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+        <div id="Radek3" style="position: absolute; left: 36mm; top: 96mm; transform-origin: left center; transform: rotate(90deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+    </div> -->
+
+
+
+
+    <!-- ID 130 backup -  <div id="printEnvelopeTemplate" style="width: 229mm; height: 114mm; position: relative; border-style: groove;"><div id="Radek1" style="position: absolute; left: 170mm; top: 90mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div><div id="Radek2" style="position: absolute; left: 170mm; top: 95mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div><div id="Radek3" style="position: absolute; left: 170mm; top: 100mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div><div id="Radek4" style="position: absolute; left: 170mm; top: 105mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div><div id="DokumentCisloJednaci" style="position: absolute; left: 177mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div><div id="DokumentEvidencniCislo" style="position: absolute; left: 177mm; top: 85mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345</div><div style="position: absolute; left: 105mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Městský úřad Králíky</div><div style="position: absolute; left: 105mm; top: 35mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Velké náměstí 5</div><div style="position: absolute; left: 105mm; top: 40mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">561 69  KRÁLÍKY</div><div style="position: absolute; left: 170mm; top: 85mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div><div style="position: absolute; left: 170mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div></div> -->
+
+
+    <!-- <div id="printEnvelopeTemplate" style="width: 229mm; height: 114mm; position: relative; border-style: groove;">
+        <div id="Radek1" style="position: absolute; left: 170mm; top: 90mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+        <div id="Radek2" style="position: absolute; left: 170mm; top: 95mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+        <div id="Radek3" style="position: absolute; left: 170mm; top: 100mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+        <div id="Radek4" style="position: absolute; left: 170mm; top: 105mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+        <div id="DokumentCisloJednaci" style="position: absolute; left: 177mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+        <div id="DokumentEvidencniCislo" style="position: absolute; left: 177mm; top: 85mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345</div>
+        <div style="position: absolute; left: 105mm; top: 30mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+        <div style="position: absolute; left: 105mm; top: 35mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Velké náměstí 5</div>
+        <div style="position: absolute; left: 105mm; top: 40mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+        <div style="position: absolute; left: 170mm; top: 85mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div>
+        <div style="position: absolute; left: 170mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+    </div> -->
+
+
+
+    <!-- 
+    <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+        <div style="position: absolute; left: 35mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+        <div style="position: absolute; left: 35mm; top: 13.5mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Velké náměstí 5</div>
+        <div style="position: absolute; left: 35mm; top: 17mm; transform-origin: left center; transform: rotate(0deg); font-size: 10px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">561 69 KRÁLÍKY</div>
+    
+        <div                           style="position: absolute; left: 104mm; top: 68mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+        <div id="DokumentCisloJednaci" style="position: absolute; left: 110mm; top: 68mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+        
+        <div                             style="position: absolute; left: 104mm; top: 72mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div>
+        <div id="DokumentEvidencniCislo" style="position: absolute; left: 110mm; top: 72mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345</div>
+        
+        <div id="Radek1" style="position: absolute; left: 104mm; top: 80mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+        <div id="Radek2" style="position: absolute; left: 104mm; top: 84mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+        <div id="Radek3" style="position: absolute; left: 104mm; top: 88mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+        <div id="Radek4" style="position: absolute; left: 104mm; top: 92mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+    </div> -->
+
+
+    <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+        <div id="Radek1" style="position: absolute; left: 100mm; top: 33mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+        <div id="Radek2" style="position: absolute; left: 100mm; top: 37mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+        <div id="Radek3" style="position: absolute; left: 100mm; top: 41mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+        <div id="DokumentEvidencniCislo" style="position: absolute; left: 132mm; top: 63mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">12345</div>
+        <div id="DokumentCisloJednaci" style="position: absolute; left: 132mm; top: 59mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+        <div id="Radek1" style="position: absolute; left: 90mm; top: 100mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">První řádek adresy</div>
+        <div id="Radek2" style="position: absolute; left: 90mm; top: 104mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy</div>
+        <div id="Radek3" style="position: absolute; left: 90mm; top: 108mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Třetí řádek adresy</div>
+        <div style="position: absolute; left: 90mm; top: 15mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+        <div id="DokumentCisloJednaci" style="position: absolute; left: 96mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">1/2011</div>
+        <div style="position: absolute; left: 86mm; top: 64mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"></div>
+        <div style="position: absolute; left: 126mm; top: 59mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ:</div>
+        <div style="position: absolute; left: 126mm; top: 63mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">EČ:</div>
+        <div style="position: absolute; left: 90mm; top: 10mm; transform-origin: left center; transform: rotate(0deg); font-size: 13px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">ČJ:</div>
+        <div style="position: absolute; left: 90mm; top: 19mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Velké náměstí 5</div>
+        <div style="position: absolute; left: 90mm; top: 23mm; transform-origin: left center; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+        <div style="position: absolute; left: 86mm; top: 63mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Velké náměstí 5</div>
+        <div style="position: absolute; left: 86mm; top: 67mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">561 69 Králíky</div>
+        <div id="DokumentCisloJednaciJinehoSW" style="position: absolute; left: 132mm; top: 67mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">1/2011</div>
+        <div style="position: absolute; left: 119mm; top: 67mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">jiný SW:</div>
+        <div style="position: absolute; left: 86mm; top: 59mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Městský úřad Králíky</div>
+        <div id="Radek4" style="position: absolute; left: 90mm; top: 113mm; transform-origin: left center; transform: rotate(0deg); font-size: 14px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+        <div id="Radek4" style="position: absolute; left: 100mm; top: 44mm; transform-origin: left center; transform: rotate(0deg); font-size: 12px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy</div>
+    </div>
+
+
+</body>
+
+</html>
