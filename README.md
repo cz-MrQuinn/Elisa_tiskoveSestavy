@@ -11,7 +11,7 @@ Cílem projektu je usnadnit a sjednotit tisk obálek v rámci elektronické spis
 
 ## 🛠 Použití
 
-1. Vyberte požadovanou šablonu (např. `obalka-c5.html`)
+1. Vyberte požadovanou šablonu (např. `template.html`)
 2. Otevřete ji v prohlížeči a/nebo v programu pro editaci .html s živým náhledem
 3. Nahraďte proměnné nebo použijte v kombinaci s výstupem ze systému ELISA
 
