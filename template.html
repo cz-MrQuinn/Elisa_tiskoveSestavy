@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="printEnvelopeTemplate" style="width: 210mm; height: 297mm; position: relative; border-style: groove;">
+        
+        <div id="Radek1" style="position: absolute; left: 80mm; top: 45mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">První řádek adresy (01)</div>
+        <div id="Radek2" style="position: absolute; left: 80mm; top: 50mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Druhý řádek adresy (02)</div>
+        <div id="Radek3" style="position: absolute; left: 80mm; top: 55mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Třetí řádek adresy (03)</div>
+        <div id="Radek4" style="position: absolute; left: 80mm; top: 60mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Čtvrtý řádek adresy (04)</div>
+        <div id="Radek5" style="position: absolute; left: 80mm; top: 65mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">Pátý řádek adresy (05)</div>
+        
+        
+        <div id="CarovyKod"                     style="position: absolute; left: 10mm; top: 10mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: &quot;Elisa BarCode&quot;; font-weight: normal; font-style: normal; text-decoration: none;">06 DEMOEL12345678</div>
+        <div id="CSpisUzelOdeslal_Popis"        style="position: absolute; left: 10mm; top: 40mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Odesílající spisový uzel</div>
+        <div id="ExtSubjektRodneCislo"          style="position: absolute; left: 10mm; top: 50mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">010101/1234</div>
+        <div id="DokumentCisloJednaci"          style="position: absolute; left: 10mm; top: 60mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+        <div id="DokumentEvidencniCislo"        style="position: absolute; left: 10mm; top: 70mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">12345</div>
+        <div id="DokumentEvidencniCisloRok"     style="position: absolute; left: 10mm; top: 80mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">12345/2013</div>
+        <div id="DokumentCisloJednaciJinehoSW"  style="position: absolute; left: 10mm; top: 90mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">1/2011</div>
+        <div id="DokumentCisloJednaciVolnyText" style="position: absolute; left: 10mm; top: 100mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">ČJ volný text</div>
+        <div id="SpisovaZnacka"                 style="position: absolute; left: 10mm; top: 110mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">8/2010 </div>
+        <div id="SpisovaZnackaVolnyText"        style="position: absolute; left: 10mm; top: 120mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: bold; font-style: normal; text-decoration: none;">Spisová značka volný text</div>
+        
+
+        <!-- CSpisUzelOdeslal_Popis -->
+        <div style="position: absolute; left: 5mm; top: 35mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (07) &lt;CSpisUzelOdeslal_Popis&gt;</div>
+
+        <!-- ExtSubjektRodneCislo -->
+        <div style="position: absolute; left: 5mm; top: 45mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (08) &lt;ExtSubjektRodneCislo&gt;</div>
+
+        <!-- DokumentCisloJednaci -->
+        <div style="position: absolute; left: 5mm; top: 55mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (09) &lt;DokumentCisloJednaci&gt;</div>
+        <!-- DokumentEvidencniCislo -->
+        <div style="position: absolute; left: 5mm; top: 65mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (10) &lt;DokumentEvidencniCislo&gt;</div>
+        <!-- DokumentEvidencniCisloRok -->
+        <div style="position: absolute; left: 5mm; top: 75mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (11) &lt;DokumentEvidencniCisloRok&gt;</div>
+        <!-- DokumentCisloJednaciJinehoSW -->
+        <div style="position: absolute; left: 5mm; top: 85mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (12) &lt;DokumentCisloJednaciJinehoSW&gt;</div>
+        <!-- DokumentCisloJednaciVolnyText -->
+        <div style="position: absolute; left: 5mm; top: 95mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (13) &lt;DokumentCisloJednaciVolnyText&gt;</div>
+        <!-- SpisovaZnacka -->
+        <div style="position: absolute; left: 5mm; top: 105mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (14) &lt;SpisovaZnacka&gt;</div>
+        <!-- SpisovaZnackaVolnyText -->
+        <div style="position: absolute; left: 5mm; top: 115mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;"> (15) &lt;SpisovaZnackaVolnyText&gt;</div>
+
+
+
+        <!-- <div style="position: absolute; left: 130mm; top: 40mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">&lt;Volný text&gt;</div>
+        <div style="position: absolute; left: 130mm; top: 50mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">&lt;Volný text&gt;</div>
+        <div style="position: absolute; left: 130mm; top: 60mm; transform-origin: left top; transform: rotate(0deg); font-size: 11px; font-family: Arial; font-weight: normal; font-style: normal; text-decoration: none;">&lt;Volný text&gt;</div> -->
+
+        <!-- <div id="Radek1">První řádek adresy (01)</div>
+        <div id="Radek2">Druhý řádek adresy (02)</div>
+        <div id="Radek3">Třetí řádek adresy (03)</div>
+        <div id="Radek4">Čtvrtý řádek adresy (04)</div>
+        <div id="Radek5">Pátý řádek adresy (05)</div>
+        <div id="CarovyKod">Čárový kód zásilky (06)</div>
+        <div id="CSpisUzelOdeslal_Popis">Spisový uzel odesilatele (07)</div>
+        <div id="ExtSubjektRodneCislo">Rodné číslo / datum narození (08)</div>
+        <div id="DokumentCisloJednaci">Dokument - Číslo jednací (09)</div>
+        <div id="DokumentEvidencniCislo">Dokument - Evidenční číslo (10)</div>
+        <div id="DokumentEvidencniCisloRok">Dokument - Evidenční číslo /2013 (11)</div>
+        <div id="DokumentCisloJednaciJinehoSW">Dokument - Číslo jednací jiného SW (12)</div>
+        <div id="DokumentCisloJednaciVolnyText">Dokument - Číslo jednací volný text (13)</div>
+        <div id="SpisovaZnacka">Spis - Spisová značka (14)</div>
+        <div id="SpisovaZnackaVolnyText">Spis - Spisová značka volný text (15)</div> -->
+
+    </div>
+</body>
+
+</html>
